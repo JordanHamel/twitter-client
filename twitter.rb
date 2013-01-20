@@ -7,6 +7,7 @@ require 'launchy'
 class TwitterClient
 
   attr_reader :access_token
+  #again, these should be in a private file :)
   CONSUMER_KEY = "rT88bd0chOOflPUQpekUzg"
   CONSUMER_SECRET = "IgS0CSLsxi1kqcYbkubdGlxYI1Zqs49BNsVHLcjl4"
 
@@ -21,6 +22,7 @@ class TwitterClient
 def run
     puts "Welcome to Brittany & Jason twitter interface!"
     puts "Here are your abundant command options"
+    #this line is so long! Maybe split it in two?
     puts " Post a status: p your status \n Send a direct message: dm person message \n Access your timeline: me \n Other person's timeline: t screenname"
     access_token = get_token("twitter_token")
     input = ""
